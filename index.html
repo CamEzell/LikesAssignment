@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes Part 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Permanent+Marker&family=Roboto&display=swap" rel="stylesheet">
+    <script src="script.js"defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- container -->
+
+    <div class="container">
+
+        <!-- navbar -->
+
+        <div class="nav">
+            <h1 class="nav-heading">Ninja Network</h1>
+            <ul class="nav-tabs">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="profileLink">Profile</a></li>
+                <li><a href="#">Your Dojo</a></li>
+                <li><button class="signIn" onclick="signUPpop()">Sign In</button></li>
+            </ul>
+        </div>
+    
+        <!-- Sign UP POPUP -->
+
+        <div id="popup">
+            <p><h1>Sign Up</h1><button id="popUpX" class="popupBtn" onclick="exitPopup()">X</button></p>
+            <p>First Name:*<input type="text" name="first_name"></p>
+            <p>Last Name:*<input type="text" name="last_name"></p>
+            <p>Email Address:*<input type="text" email="email_address"></p>
+            <p>Password:*<input type="password" name="password"></p>
+            <p>Confirm Password:*<input type="password" name="password"></p>
+            <p>Date of Birth:*<input type="date" name="dob"></p>
+            <button id="popUpsignUp" class="popupBtn" onclick="exitPopup()">Sign Up</button>
+        </div>
+
+
+
+        <!-- feed header -->
+        <h2 class="feedHeader">Your Feed</h2>
+
+        <!-- Content Container -->
+        <div class="contentContainer">
+        <!--Ninja Info-->
+
+            <div class="mainLeft">
+                <img src="/imgs/ninja1.png" alt="ninjaAv">
+                <a href="#">Change Avatar</a>
+                <h3>Cam Ezell</h3>
+            </div>
+
+            <!--Posts-->
+            
+            <div class="mainRight">
+
+                <div class="userPost">
+                
+                    <div class="rowOne">
+                        <h2>Some User</h2>
+                        <div class="likesDiv">
+                            <ul class="likeStuff">
+                                <li><span id="numLikesZero" class="numLikes">9</span></li>
+                                <li>Like(s)</li>
+                                <li><button id="likeBtn" onclick="addLike('numLikesZero')">Like</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>Check out this HTML CSS for the plotting our blocks assignment <a href="#" class="linkForPost">plottingOurBLocks</a></p>
+                </div>
+
+                <div class="userPost">
+                
+                    <div class="rowOne">
+                        <h2>Some User</h2>
+                        <div class="likesDiv">
+                            <ul class="likeStuff">
+                                <li><span id="numLikesOne" class="numLikes">12</span></li>
+                                <li>Like(s)</li>
+                                <li><button id="likeBtn" onclick="addLike('numLikesOne')">Like</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>Just finished the layout for a local <a href="#" class="linkForPost">clothing</a> store's website, how does it look? </p>
+                </div>
+
+                <div class="userPost">
+                
+                    <div class="rowOne">
+                        <h2>Some User</h2>
+                        <div class="likesDiv">
+                            <ul class="likeStuff">
+                                <li><span id="numLikesTwo" class="numLikes">9</span></li>
+                                <li>Like(s)</li>
+                                <li><button id="likeBtn" onclick="addLike('numLikesTwo')">Like</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p> How is everyone doing on the <a href="#" class="linkForPost">profile page</a>, Im not sure if the HTML is nested properly, thoughts?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

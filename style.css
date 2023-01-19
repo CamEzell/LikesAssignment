@@ -1,0 +1,195 @@
+/* CSS Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fixed width container class that will "auto-center" itself */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 92%;
+    background-color: rgb(47, 47, 47);
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li {
+    list-style-type: none;
+}
+
+ul {
+    width: 50%;
+}
+.nav a {
+    font-size: 1.1rem;
+    color: azure;
+    text-decoration: none;
+}
+
+.nav-heading {
+    color: azure;
+    text-shadow: 5px 5px 5px black;
+}
+
+.signIn {
+    font-size: 1.1rem;
+    width: 100%;
+    color: black;
+}
+.profileLink {
+    font-weight: 800;
+}
+
+/* Main Content Container */
+
+.contentContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Ninja Info */
+
+.mainLeft {
+    border: 5px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25vh;
+    width: 20%;
+    background-color: rgba(129, 93, 180, 0.283);
+}
+
+
+
+/* Posts */
+
+.mainRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+}
+
+.userPost {
+    margin-bottom: 5vh;
+    width: 100%;
+    height: 15vh;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.rowOne {
+    width: 100%;
+    display: flex;
+    align-items:  center;
+    justify-content: space-around;
+}
+
+.likeStuff {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+li {
+    list-style-type: none;
+    font-size: 20px;
+}
+.likesDiv {
+    width: 60%;
+
+}
+
+#likeBtn {
+    border-radius: 5px;
+    color: black;
+    height: 75%;
+    width: 75px;
+}
+
+p {
+    margin-top: 5%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+#popup {
+    display: none;   
+    border:2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2vh;
+    background-image: linear-gradient(to bottom, rgb(89, 81, 92), rgb(129, 93, 180));
+    position: fixed;
+    top: 15%;
+    left: 30%;
+}
+
+#popUpX {
+    position:relative;
+    left: 45%;
+    top: -40px;
+}
+
+
+
+/* Styling */
+
+.feedHeader {
+    margin: 3vh 0 3vh 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 10vh;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+#likeBtn {
+    font-size: 18px;
+    border: 2px solid black;
+    background-image: linear-gradient(to right, rgb(63, 57, 75), rgb(129, 93, 180));
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.userPost {
+    background-color: rgba(105, 105, 105, 0.687);
+}
+
+.signIn {
+    border: 2px solid black;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 2px;
+
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+    background-color: rgb(199, 197, 202);
+}
